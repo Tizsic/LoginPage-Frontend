@@ -1,0 +1,154 @@
+* {
+    margin: auto;
+}
+
+body, html {
+    height: 100%;
+    /* The image used */
+    background-image: url("assets/main_background.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+#icon_image {
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    border: 1px, solid rgba(0, 0, 0, 0.778);
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.35);
+    border-radius: 50%;
+    
+}
+
+#title{
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main_container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#startup_container {
+    padding: 10px;
+}
+
+#button_container {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.buttons {
+    width: 76px;
+    height: 40px;
+    margin: 25px;
+    background-color: rgb(235, 110, 127);
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+#signup_option {
+    display: none;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+#login_option {
+    display: none;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+#username, #loginusername {
+    margin-left: 10px;
+}
+
+#useremail {
+    margin-left: 50px;
+
+}
+
+#userpassword, #loginuserpassword {
+    margin-left: 10px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: none;
+    background: transparent;
+    font-size: 25px;
+}
+
+input :focus {
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: none;
+    background: transparent;
+
+}
+
+label {
+    font-size: 25px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: space-evenly;
+}
