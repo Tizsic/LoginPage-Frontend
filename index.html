@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,68 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- main container -->
+    <div id="container">
 
-    <!-- main container for the login/signup option -->
-    <div id="main_container">
-        <div id="image_container">
-            <img src="assets/blank_profile_icon.png" alt="icon_image" id="icon_image">
-            <h2 id="title">Welcome!</h2>
-        </div>
-        <div id="startup_container">
-            <div id="button_container">
-                <button id="signup" class="buttons">Sign Up</button>
-                <button id="login" class="buttons">Login</button>
-            </div>
+        <!-- login panel -->
+        <div id="login_container">
 
+            <!-- initial login/signup button options -->
+
+            <div id="startup_container">
+
+                <!-- container for user image -->
+                <div id="image_container">
+                    <img src="assets/blank_profile_icon.png" alt="icon_image" id="icon_image">
+                </div>
+                <h2 id="title">Welcome!</h2>
+
+                <!-- container for buttons -->
+                <div id="button_container">
+                    <button class="buttons" id="login_button">Login</button>
+                    <button class="buttons" id="signup_button">Sign Up</button>
+                </div>
+
+                 <!-- container for Signing Up -->
+        <div id="signup_option">
+            <form>
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username"><br>
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail"><br>
+                <label for="userpassword">Password:</label>
+                <input type="password" id="userpassword" name="userpassword"><br>
+                <div class="button_container">
+                    <input class="buttons" type="submit" value="submit">
+                </div>
+
+            </form>
         </div>
-                <!-- container for Signing Up -->
-                <div id="signup_option">
-                    <form>
-                        <label for="username">Username: </label>
-                        <input type="text" id="username" name="username"><br>
-                        <label for="useremail">Email:</label>
-                        <input type="email" id="useremail" name="useremail"><br>
-                        <label for="userpassword">Password:</label>
-                        <input type="password" id="userpassword" name="userpassword"><br>
-                        <div class="button_container">
-                            <button class="cancel_button buttons">cancel</button>
-                            <input class="buttons" type="submit" value="submit">
-                        </div>
-                        
-                    </form>
+
+        <!-- container for Login -->
+        <div id="login_option">
+            <form>
+                <label for="username">Username: </label>
+                <input type="text" id="loginusername" name="username"><br>
+                <label for="userpassword">Password:</label>
+                <input type="password" id="loginuserpassword" name="userpassword"><br>
+                <div class="button_container">
+                    <input class="buttons" type="submit" value="submit">
                 </div>
-            
-                <!-- container for Login -->
-                <div id="login_option">
-                    <form>
-                        <label for="username">Username: </label>
-                        <input type="text" id="loginusername" name="username"><br>
-                        <label for="userpassword">Password:</label>
-                        <input type="password" id="loginuserpassword" name="userpassword"><br>
-                        <div class="button_container">
-                            <button class="cancel_button buttons">cancel</button>
-                            <input class="buttons" type="submit" value="submit">
-                        </div>
-                        
-            
-                    </form>
-                </div>
-        
+            </form>
+        </div>
     </div>
+        </div>
+
+       
+
+        <div id="info_container">
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
